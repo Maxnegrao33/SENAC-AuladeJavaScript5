@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Maciel Oliveira">
+    <title>Alterar Preço para Iphone</title>
+</head>
+<body>
+    <h1>Produto</h1>
+    <div id="Preco">
+        Preço: R$100,00
+    </div>
+
+    <script>
+        const isiPhone = /iPhone/.test(navigator.userAgent)
+
+        if(isiPhone){
+            const precoElement = document.getElementById("Preco")
+            precoElement.innerHTML = "Preço: R$ 2500,00 (Para Iphone)"
+    
+        }
+    </script>
+</body>
+</html>
